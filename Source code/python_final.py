@@ -268,7 +268,7 @@
 #         continue
 #     print(i)
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # import random
 # sicnumber = random.randint(1, 20)
@@ -795,4 +795,98 @@
 # dec_.update(new)
 # for a,b in dec_.items():
 #     print(f'your {a} is {b}')
+
+
+                                                        #  fromkey method  #
+
+
+# d = {'name': '','age': '','roll':''}          # this is another way...
+# d = dict.fromkeys(['name','age','roll'],"don't know")     # entering a value in dictionary using dict.formkey()method
+# print(d)
+
+# d = dict.fromkeys(range(1,40),"don't know")           # same using range ,method
+# print(d)
+
+
+
+
+                                                        #  get method on dict #
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# print(d.get('names'))           # wrong key give none value on get method
+# print(d.get('name'))                                                                # get is beter way to acses data
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# print(d['name'])                # normal way to acses data on dict......
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# if 'name' in d:
+#     print(True)                               # with in method
+# else:
+#     print(False)
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# if d.get('name'):
+#     print(True)                   # with get() method
+# else:
+#     print(False)
+
+                                                            # copy method #
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# d2 = d.copy()
+# print(d2)
+# print(d)
+                                                        # clear() method#
+
+# d = {'name': "don't know", 'age': "don't know", 'roll': "don't know"}
+# d.clear()                                                                     # celaring dict using clear method
+# print(d)
+
+
+                                                        # know how many seconds you have lived in your age #
+
+# print("enter your age if you want to see your age in seconds")
+# age = input("enter your age: ")
+# age_in_seconds = int(age)*360*24*60*60
+# print('you lived for {} seconds in your age'.format(age_in_seconds))
+
+# age = int(input("enter your age: "))
+# def seconds_in_life(int_):
+#     life_in_seconds = int_*360*24*60*60                   # functional way....
+#     return life_in_seconds
+# ans = seconds_in_life(age)
+# print(f"You have lived {ans} seconds in your life....get a girl hehehe")
+
+# def age_in_seconds():
+#     user_age = int(input("enter your age: "))
+#     age_seconds = user_age*365*24*60*60                                          # more simplifying way
+#     print(age_seconds)
+# age_in_seconds()
+
+                                                # another version... :)
+# def age_program():
+#     second_or_years = input("enter (s) if you want to convert second in years or enter (y) for years to second ")
+#     if second_or_years == "s":
+#         user_input = input("enter the number of second you have lived for: ")
+#         print(f"you have lived for {int(user_input)/60/60/24/365} years")
+#     elif second_or_years == "y":
+#         user_input = input("enter the number of year you have lived for: ")
+#         print(f"you have lived for {int(user_input)*365*24*60*60} Seconds")
+# age_program()
+
+                                                        # random practice #
+
+# import requests
+# from bs4 import BeautifulSoup
+# request = requests.get("https://www.johnlewis.com/house-by-john-lewis-nova-fabric-office-chair/p3082162")
+# content = request.content
+# soup = BeautifulSoup(content,"html.parser")
+# element = soup.find("img")
+# # <p class="u-centred price">£70.00
+# print(element.txt)                                                    # this fucking code returning NONE value fuckkkkkkkkkkkk.......it should return price of eliment..
+
+
+
+
 
