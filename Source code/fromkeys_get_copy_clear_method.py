@@ -18,6 +18,10 @@
 # else:
 #     print("NO")                                   
 
+# d = {'name':'shajid','name':'rayhan','roll':'1512','age':'23','country':'Bangladesh','City':'Chittagong'}
+# print(d.get('name'))              # get method ovarwrite thos same key, 
+
+
 
                         # Copy method
 
@@ -37,3 +41,4 @@
 # d = {'name':'shajid','roll':'1512','age':'23','country':'Bangladesh','City':'Chittagong'}
 # d.clear()
 # print(d)
+
