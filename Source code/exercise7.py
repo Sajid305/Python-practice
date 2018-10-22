@@ -8,12 +8,18 @@
 
 #Solution
 
-def number(n):
-    cubes = {}
+# def number(n):
+#     cubes = {}
+#     for i in range(1,n+1):
+#         cubes[i] = i**3
+#     return cubes
+
+# print(number(11))
+
+
+def finder(n):
+    cubs={}
     for i in range(1,n+1):
-        cubes[i] = i**3
-    return cubes
-
-print(number(11))
-
-
+        cubs[i]=i**3
+    return cubs
+print(finder(20))
