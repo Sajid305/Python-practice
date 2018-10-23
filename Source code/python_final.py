@@ -904,6 +904,7 @@
 #     print(student_var)
 
 
+
                                             # exercise
 # define a function that takes a number(n)
 # return a dictionary containing cube of numbers from 1 to n
@@ -929,3 +930,11 @@
 #         cubs[i]=i**3
 #     return cubs
 # print(finder(20))
+
+                                # #fromkeys get copy clear method
+
+                # fromkeys method
+# data = dict.fromkeys(["name","age","roll"],"unknown")
+# print(data)
+# data = dict.fromkeys(range(1,12),"unknown")               #dict useing range function
+# print(data)
