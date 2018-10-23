@@ -967,3 +967,9 @@
 # d.popitem()
 # print(d)
 # print(D)
+                                                                        # Clear method
+
+# d = {'name':'shajid','roll':'1512','age':'23','country':'Bangladesh','City':'Chittagong'}
+# d.clear()
+# print(d)
+
