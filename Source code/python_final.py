@@ -973,3 +973,11 @@
 # d.clear()
 # print(d)
 
+                        #Word_counter_programm
+
+# def count(s):
+#     counted = {}
+#     for car in s:
+#         counted[car] = s.count(car)
+#     return counted
+# print(count('shajid'))
