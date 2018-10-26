@@ -1,9 +1,11 @@
-# set data type
+                    
+
+                                            # set data type
 # unordered collection of unique items 
  
 # s = {1,2,3}
  
-s = {1,1.1, 2.3, 'string'}
+# s = {1,1.1, 2.3, 'string'}
  
 # print(s[1])
 # l = [1,2,3,4,5,5,5,5,6,7,7,8]
@@ -17,4 +19,4 @@ s = {1,1.1, 2.3, 'string'}
 # s.discard(5)
 # s1 = s.copy()
 # print(s1)
-print(s)
+# print(s)
