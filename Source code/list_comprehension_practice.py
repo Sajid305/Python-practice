@@ -28,11 +28,11 @@
 # print(j_list)
 
 
-# With out list comprehension
+# Without list comprehension
 
-j_list = []
-for i in range(3):
-    j_list.append([1,2,3])
-print(j_list)
+# j_list = []
+# for i in range(3):
+#     j_list.append([1,2,3])
+# print(j_list)
 
 
