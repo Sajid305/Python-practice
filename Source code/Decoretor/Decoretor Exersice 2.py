@@ -1,31 +1,35 @@
 
 
-                                # Decoretor Exersice 2
+                                                #         Decoretor practice 
+
+
 
 from functools import wraps
-def only_int_allow(function):
-    @wraps(function)
-    def wrapper(*args, **kwargs):
-        if all([type(arg) == int for arg in args]):
-            return function(*args, **kwargs)
-        print("Invalid arguments")
-             
-        # data_types = []
-        # for arg in args:
-        #     data_types.append(type(arg)==int)
-        # if all(data_types):
-        #     return function(*args, **kwargs)
-        # else:
-        #     print("Invalid arguments")
-    return wrapper
-             
- 
-@only_int_allow
-def add_all(*args):
+
+def decoretor(any_function):
+    @wraps(any_function)
+    def function(*args,**kwargs):
+        if all([type(arg)==int for arg in args]): # we can also use list comprehension for this 
+            return any_function(*args,**kwargs)
+        else:
+            print("un suported data type")
+    
+    #     data_type = []
+    #     for arg in args:
+    #         data_type.append(type(arg)==int) # ---> we could use if els for check is thet int or not but this return same thing
+    #     if all(data_type):
+    #         return any_function(*args,**kwargs)
+    #     else:
+    #         return "un suported data type"
+    return function
+
+
+
+@decoretor
+def addition(*args):
     total = 0
     for i in args:
         total += i
-    return total 
- 
- 
-print(add_all(1,2,3,4,5, 'shajid'))
+    return total
+
+print(addition(1,2,3,4,5,6,7,8,9,'adsfsdaf'))
