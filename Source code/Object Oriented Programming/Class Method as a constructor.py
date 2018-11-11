@@ -21,3 +21,8 @@ class Person:
 
     def fullName(self):
         return f'{self.first_name} {self.last_name}'
+
+    def is_above_18(self):
+        self.age > 18
+
+  
