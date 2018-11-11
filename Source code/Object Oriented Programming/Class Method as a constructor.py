@@ -27,15 +27,15 @@ class Person:
 
     @classmethod
     def from_string(cls,string):
-        first,last,age = string.split(',')
+        first,last,age = string.split(',') # here we have make our one constructor
+        return cls(first,last,age)
 
 
-p1 = Person('shajid','rayhan',23)
-p2 = Person('shjaid','rayhan',25)
+# p1 = Person('shajid','rayhan',23)
+# p2 = Person('shjaid','rayhan',25)
 p3 = Person.from_string('shajid ,rayhan,23')
-
 counted = Person.counted()
-print(p3.full_name())
-print(p1.counted())
-print(p2.fullName())
-print()
+
+# print(p1.counted())
+# print(p2.fullName())
+print(p3.fullName())
