@@ -25,4 +25,8 @@ class Person:
     def is_above_18(self):
         self.age > 18
 
-  
+    @classmethod
+    def from_string(cls,string):
+        first,last,age = string.split(',')
+
+
