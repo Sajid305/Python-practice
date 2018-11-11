@@ -19,4 +19,5 @@ class Person:
     def counted(cls):
         return f'you have created {cls.count_object}'
 
-  
+    def fullName(self):
+        return f'{self.first_name} {self.last_name}'
