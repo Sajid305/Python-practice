@@ -17,7 +17,7 @@ class Person:
 
     @classmethod
     def counted(cls):
-        return f'you have created {cls.count_object}'
+        return f'you have created {cls.count_object} object'
 
     def fullName(self):
         return f'{self.first_name} {self.last_name}'
@@ -30,3 +30,12 @@ class Person:
         first,last,age = string.split(',')
 
 
+p1 = Person('shajid','rayhan',23)
+p2 = Person('shjaid','rayhan',25)
+p3 = Person.from_string('shajid ,rayhan,23')
+
+counted = Person.counted()
+print(p3.full_name())
+print(p1.counted())
+print(p2.fullName())
+print()
