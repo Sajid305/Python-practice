@@ -64,7 +64,9 @@ class Phone:
 class SmartPhone(Phone):
     def __init__(self,brand,model,price,ram,internal_memory,front_camera):
         super().__init__(brand,model,price)
-        
+        self.ram = ram
+        self.internal_memory = internal_memory
+        self.front_camera = front_camera
 
 
 phone1 = Phone('nokia','1100',2000)
