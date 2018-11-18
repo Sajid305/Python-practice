@@ -19,5 +19,6 @@ mobile1 = Mobile('nokia 1110')
 string = 'oppo 11'
 
 is_bad_mobile = Mobilestore()
-is_bad_mobile.add_mobile(string)
-print(is_bad_mobile.mobile)
+is_bad_mobile.add_mobile(mobile1)
+new_phone = is_bad_mobile.mobile
+print(new_phone[0].name)
