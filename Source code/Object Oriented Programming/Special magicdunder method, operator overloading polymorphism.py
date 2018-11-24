@@ -44,6 +44,7 @@
 # print(len(my_smartphone))
 # print(len(my_phone))
 
+
 class Phone:
     def __init__(self,brand,model,price):
         self.brand = brand
