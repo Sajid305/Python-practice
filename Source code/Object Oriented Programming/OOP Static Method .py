@@ -1,5 +1,6 @@
 
 
+
 #                                    OOP Static method
 
 
@@ -35,6 +36,7 @@ class Person:
 # p2 = Person('shjaid','rayhan',25)
 # p3 = Person.from_string('shajid ,rayhan,23')
 # counted = Person.counted()
+
 
 # print(p1.counted())
 # print(p2.fullName())
