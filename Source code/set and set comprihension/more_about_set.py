@@ -1,12 +1,12 @@
 # in keyword in sets and for loop
  
-s = {'a', 'b', 'c'}
+s = {'a', 'b', 'c','d'}
  
 # in keyword to check if item is present or not in set
-if 'a' in s:
-    print("present")
+if 'a && d' in s:
+    print("present those letter")
 else:
-    print("not present")
+    print("not present yet")
  
 # for loop 
 for item in s:
