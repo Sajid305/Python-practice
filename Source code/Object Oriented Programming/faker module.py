@@ -18,3 +18,5 @@ print(fake.phone_number())
 print(fake.name())
 print(fake.address())
 print(fake.email())
+#fake of email data
+print(fake.emaildata())
